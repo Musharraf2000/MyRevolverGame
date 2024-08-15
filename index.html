@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian Roulette</title>
+    <style>
+        .pixelated {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <div class="grid grid-cols-3 gap-4 p-4" >
+        <!-- First Column -->
+        <div class="flex justify-center items-center" id="Cowboy1">
+            <img src="./images/newCoyboyRight.png" alt="Image 1" class="w-1/2" id="cowb1">
+            <input type="text" placeholder="Enter Player1 Name" class="mt-2 text-center border-2 border-black">
+        </div>
+
+        <!-- Second Column -->
+        <div class="flex justify-center items-center" id="Revolver">
+            <img src="./images/Revolver.png" alt="Image 2" class="w-1/2" id="revolverImage">
+        </div>
+
+        <!-- Third Column -->
+        <div class="flex justify-center items-center" id="Cowboy2">
+            <img src="./images/newCoyboyLeft.png" alt="Image 4" class="w-1/2" id = "cowb2">
+            <input type="text" placeholder="Enter Player2 Name" class="mt-2 text-center border-2 border-black">
+        </div>
+
+
+
+    </div>
+    <!-- Div renders bullets dynamically from script -->
+    <div id="bulletContainer" class="flex space-x-2 justify-center items-center"></div>
+    <div class="flex justify-center items-center ">
+        <button id="playButton"  class="flex justify-center items-center  p-2 pr-16">
+            <img src="./images/shoot.png" alt="Image 4" class="w-1/4">
+        </button>
+    </div>
+    <audio id="empty" src="./sounds/empty.mp3" preload="auto"></audio>
+    <audio id="shoot" src="./sounds/shoot.mp3" preload="auto"></audio>
+    <script src="./JS/main.js" defer></script>
+
+</body>
+
+</html>
