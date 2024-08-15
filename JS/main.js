@@ -26,7 +26,7 @@ if ('serviceWorker' in navigator) {
  const zerosArray = []; //empty array
  for (let i = 0; i < 6; i++) { 
      if (i == randomNumber){
-         zerosArray.(1); //push 5 '0's and 1 '1's into the array
+         zerosArray.push(1); //push 5 '0's and 1 '1's into the array
      }else{
          zerosArray.push(0)
      }  
