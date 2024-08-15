@@ -1,3 +1,15 @@
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then((registration) => {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        })
+        .catch((error) => {
+          console.log('ServiceWorker registration failed: ', error);
+        });
+    });
+  }
+
  // Get the button and audio element
  const playButton = document.getElementById('playButton'); //Html Button
  const audio1 = document.getElementById('empty'); //Empty sound
@@ -14,7 +26,7 @@
  const zerosArray = []; //empty array
  for (let i = 0; i < 6; i++) { 
      if (i == randomNumber){
-         zerosArray.push(1); //push 5 '0's and 1 '1's into the array
+         zerosArray.(1); //push 5 '0's and 1 '1's into the array
      }else{
          zerosArray.push(0)
      }  
